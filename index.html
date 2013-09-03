@@ -4,14 +4,32 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-	<link rel="stylesheet" href="js/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.css"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
 </head> 
 <body>
 	<div data-role="page"> 
 		<div data-role="header">Prima pagina</div> 
-		<div data-role="content">continut</div> 
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="name">Nume:</label>
+				<input type="text" name="name" id="name" value="" />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="prenume">Prenume:</label>
+				<input type="text" name="prenume" id="prenume" value="" />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" value="" />
+			</div>
+			<select name="foo" id="foo"  data-role="none">
+				<option value="a" >A</option>
+				<option value="b" >B</option>
+				<option value="c" >C</option>
+			</select>
+		</div> 
 		<div data-role="footer">Footer</div> 
 	</div>
 </body>
