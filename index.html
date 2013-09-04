@@ -11,6 +11,8 @@
 
 	$( document ).ready(function() {
 
+		$("#form").validate();
+		
 		$('#submit').click(function(){
 
 			var name = $('#name').val();
@@ -34,17 +36,17 @@
 		<form id="form">
 			<div data-role="fieldcontain">
 				<label for="name">Name:</label>
-				<input type="text" name="name" id="name" value="" />
+				<input type="text" name="name" id="name" value="" required />
 			</div>
 
 			<div data-role="fieldcontain">
 				<label for="lastname">Lastname:</label>
-				<input type="text" name="lastname" id="lastname" value="" />
+				<input type="text" name="lastname" id="lastname" value="" required />
 			</div>
 
 			<div data-role="fieldcontain">
 				<label for="email">Email:</label>
-				<input type="text" name="email" id="email" value="" />
+				<input type="text" name="email" id="email" value="" required />
 			</div>
 
 			<select name="foo" id="foo"  data-role="none">
