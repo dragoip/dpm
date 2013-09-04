@@ -14,12 +14,12 @@
 		// $("#form").validate();
 		
 		$('#submit').click(function(){
-			alert('test');
+			// alert('test');
 			var name = $('#name').val();
 			var lastname = $('#lastname').val();
 			var email = $('#email').val();
 			if(name != '' && lastname != '' && email != ''){
-				$.post("http://code.calexandru.com/welcome/get_data_form", $("#form").serialize());
+				$.post("http://code.calexandru.com/welcome/get_data_form", {name:name, lastname:lastname, email:email});
 			}
 		});
 
