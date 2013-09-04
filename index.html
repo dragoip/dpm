@@ -11,15 +11,16 @@
 
 	$( document ).ready(function() {
 
-		$("#form").validate();
+		// $("#form").validate();
 		
 		$('#submit').click(function(){
 
 			var name = $('#name').val();
 			var lastname = $('#lastname').val();
 			var email = $('#email').val();
-			alert('Numele este ' + name);
-			$.post("http://code.calexandru.com/welcome/get_data_form", $("#form").serialize());
+			if(name != '' && lastname != '' && email != ''){
+				$.post("http://code.calexandru.com/welcome/get_data_form", $("#form").serialize());
+			}
 		});
 
 	});	
